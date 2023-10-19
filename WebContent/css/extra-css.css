@@ -1,0 +1,195 @@
+main{
+    margin: 20px 0;
+}
+.img-parent{
+	text-align: center;
+}
+
+body{
+	background: #ffffff;
+}
+.form-inline{
+	margin: 5px 5px;
+}
+img{
+	object-fit:cover;
+}
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul,p{
+        margin: 0;
+        padding: 0;
+      }
+      .header_logo h2{
+       color: white;
+      }
+      header{
+        background-color: rgb(46, 50, 49);
+        /* display: flex; */
+      }
+      .header_form{
+          display: flex;
+          align-items: center;
+          width: 100%;
+      }
+      nav{
+        padding: 10px;
+         color: aquamarine;
+         background-color: rgb(57, 65, 62);
+      }
+      .header_nav{
+        
+        list-style: none;
+         gap: 0 20px;
+      }
+      .header_auth{
+      
+         gap: 0 20px;
+      }
+      .card-body img{
+       width: 78%;;
+      
+     }
+
+    .page-item:first-child .page-link
+     {
+ 
+       border-radius: 50%;
+      
+     }
+     .page-item:last-child .page-link  {
+ 
+      border-radius: 50%;
+        
+      }
+
+      .page-link:hover{
+        color: white;
+      background-color: rgb(99, 127, 192);
+   
+ }
+
+     .page-link{
+     
+       border-radius: 50% ;
+      
+     }
+     .footer_box{
+     
+        padding: 30px;
+        background-color: rgb(60, 55, 48);
+    
+      }
+      .footer_contact p{
+        background-color: rgb(11, 12, 12);
+        text-align: center;
+        padding: 60px;
+        color: rgb(235, 137, 9);
+ 
+   }
+
+.col-6{
+	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+	height: 650px;
+    padding: 0 112px;
+} 
+.col-6 h2{
+	font-size: 2.5em;
+	font-weight: 800;
+}
+.col-6 button{
+	padding: 5px 40px;
+	font-size: 30px;
+	border-radius: 15px;
+} 
+.col-6 p{
+	font-size: 1.5em;
+}
+.welcome{
+	background: #0f1130;
+}
+/* global style */
+body.admin{
+	color:#fff;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*admin navbar */
+.admin .my-nav{
+    display: flex;
+	justify-content:start;
+    flex-direction: column;
+ 
+
+}
+
+.admin .my-nav h1{
+    font-size: 16px;
+    color: #cd632a;
+}
+.admin .my-nav li {
+    list-style: none;
+    
+}
+.admin .my-nav li :hover{
+    list-style: none;
+    
+    background-color: #8c3e9c;
+}
+.admin .my-nav a {
+    padding: 10px 15px;
+    color: #fff;
+}
+.admin .my-nav a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* banner of the page  */
+.admin .carousel-item{
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+}
+.admin .no-padding{
+	padding: 0px 0px;
+}
+.admin img{
+	width:100%;
+	height:100%;
+	object-fit: cover;
+	object-position: center;
+}
+ /*body of the page  */
+ .admin .my-team-table h2{
+    background-color: #8c3e9c;
+    padding: 10px 15px; 
+ }
+.admin .my-team-table{
+	background-color: #1a2034;
+	padding:20px 0px 300px 0px;
+	
+}
+table th,td{
+	color: #ffffff;
+}
+
+.admin .background .my-nav{
+	height:100%;
+	background-color: #1a2034;
+	opacity: 0.95;
+}
+.admin .background{
+	background: url(../img/vernice.jpg) repeat;
+	height:100%;
+}
+header a {
+    text-decoration: none;	
+}
