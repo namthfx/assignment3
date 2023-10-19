@@ -1,0 +1,16 @@
+0:0:0:0:0:0:0:1 - - [25/Mar/2023:19:00:27 +0700] "GET /assignment3/cart.jsp HTTP/1.1" 200 4973
+0:0:0:0:0:0:0:1 - - [25/Mar/2023:20:24:10 +0700] "GET /assignment3/header.jsp HTTP/1.1" 200 2483
+0:0:0:0:0:0:0:1 - - [25/Mar/2023:20:24:10 +0700] "GET /css/extra-css.css HTTP/1.1" 404 773
+0:0:0:0:0:0:0:1 - - [25/Mar/2023:20:24:58 +0700] "GET /assignment3/header.jsp HTTP/1.1" 200 2495
+0:0:0:0:0:0:0:1 - - [25/Mar/2023:20:24:58 +0700] "GET /assignment3/css/extra-css.css HTTP/1.1" 200 3111
+0:0:0:0:0:0:0:1 - - [25/Mar/2023:20:25:20 +0700] "GET /assignment3/header.jsp HTTP/1.1" 200 2495
+0:0:0:0:0:0:0:1 - - [25/Mar/2023:20:25:20 +0700] "GET /assignment3/css/extra-css.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [25/Mar/2023:20:26:03 +0700] "GET /assignment3/header.jsp HTTP/1.1" 200 2502
+0:0:0:0:0:0:0:1 - - [25/Mar/2023:20:26:03 +0700] "GET /assignment3/css/extra-css.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [25/Mar/2023:20:27:16 +0700] "GET /assignment3/home.jsp HTTP/1.1" 200 8128
+0:0:0:0:0:0:0:1 - - [25/Mar/2023:20:27:16 +0700] "GET /assignment3/css/extra-css.css HTTP/1.1" 200 3155
+0:0:0:0:0:0:0:1 - - [25/Mar/2023:20:27:40 +0700] "GET /assignment3/css/extra-css.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [25/Mar/2023:20:28:36 +0700] "GET /assignment3/header.jsp HTTP/1.1" 200 2463
+0:0:0:0:0:0:0:1 - - [25/Mar/2023:20:28:36 +0700] "GET /assignment3/css/extra-css.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [25/Mar/2023:20:30:46 +0700] "GET /assignment3/header.jsp HTTP/1.1" 200 2487
+0:0:0:0:0:0:0:1 - - [25/Mar/2023:20:30:46 +0700] "GET /assignment3/css/extra-css.css HTTP/1.1" 200 3159

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServlet"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.ServletContext"/>
+    <fullyQualifiedTypeName name="jakarta.websocket.Session"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="java.beans.Statement"/>
+    <fullyQualifiedTypeName name="java.sql.Timestamp"/>
+    <fullyQualifiedTypeName name="context.DBcontext"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="mapper.ProductMapper"/>
+    <fullyQualifiedTypeName name="mapper.IProductMapper"/>
+    <fullyQualifiedTypeName name="mapper.IRowMapper"/>
+    <fullyQualifiedTypeName name="dao.IOrderDAO"/>
+    <fullyQualifiedTypeName name="dao.IProductOrdersDAO"/>
+    <fullyQualifiedTypeName name="dao.OrderDao"/>
+    <fullyQualifiedTypeName name="dao.ProductOrdersDAO"/>
+    <fullyQualifiedTypeName name="dao.IProductDAO"/>
+    <fullyQualifiedTypeName name="dao.ProductDAO"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="model.Order"/>
+    <fullyQualifiedTypeName name="model.Cart"/>
+    <fullyQualifiedTypeName name="model.Product"/>
+    <fullyQualifiedTypeName name="model.ProductOrders"/>
+    <fullyQualifiedTypeName name="java.util.Map.Entry"/>
+    <fullyQualifiedTypeName name="java.security.KeyStore.Entry"/>
+    <fullyQualifiedTypeName name="org.apache.jasper.tagplugins.jstl.core.Set"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="service.ProductService"/>
+    <fullyQualifiedTypeName name="service.IProductService"/>
+    <fullyQualifiedTypeName name="pagable.Pagable"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.Driver"/>
+</qualifiedTypeNameHistroy>
