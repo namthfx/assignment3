@@ -20,10 +20,8 @@
     <fullyQualifiedTypeName name="dao.ProductOrdersDAO"/>
     <fullyQualifiedTypeName name="dao.IProductDAO"/>
     <fullyQualifiedTypeName name="dao.ProductDAO"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="model.Order"/>
     <fullyQualifiedTypeName name="model.Cart"/>
-    <fullyQualifiedTypeName name="model.Product"/>
     <fullyQualifiedTypeName name="model.ProductOrders"/>
     <fullyQualifiedTypeName name="java.util.Map.Entry"/>
     <fullyQualifiedTypeName name="java.security.KeyStore.Entry"/>
@@ -31,9 +29,12 @@
     <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
-    <fullyQualifiedTypeName name="service.ProductService"/>
-    <fullyQualifiedTypeName name="service.IProductService"/>
-    <fullyQualifiedTypeName name="pagable.Pagable"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.Driver"/>
+    <fullyQualifiedTypeName name="service.IProductService"/>
+    <fullyQualifiedTypeName name="service.ProductService"/>
+    <fullyQualifiedTypeName name="model.Product"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="pagable.Pagable"/>
 </qualifiedTypeNameHistroy>
