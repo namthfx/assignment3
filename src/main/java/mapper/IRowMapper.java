@@ -4,4 +4,5 @@ import java.sql.ResultSet;
 
 public interface IRowMapper<T> {
 	T mapRow(ResultSet rs);
+	int count(ResultSet rs);
 }

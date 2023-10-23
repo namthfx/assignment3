@@ -12,7 +12,7 @@ import context.DBcontext;
 
 
 public class GenericDaoIpml<T>  implements GenericDAO<T> {
-	DBcontext ctx;
+	DBcontext ctx = null;
     public Connection getConnection()  {
     	ctx = new DBcontext();
     	try {
@@ -36,9 +36,8 @@ public class GenericDaoIpml<T>  implements GenericDAO<T> {
 			connection = getConnection();
 			statement = connection.prepareStatement(sql);
 			connection.setAutoCommit(false);
-			setParameter(statement, parameters);
-			statement.executeUpdate();
-			rs = statement.getGeneratedKeys();
+			rs = statement.executeQuery();
+//			statement.getGeneratedKeys();
 			connection.commit();
 			System.out.println("query thanh cong");
 			while (rs.next()) {
@@ -70,6 +69,52 @@ public class GenericDaoIpml<T>  implements GenericDAO<T> {
 			}
 		}
 		return p;
+	}
+    
+    @Override
+	public int countQuery(String sql, IRowMapper<T> rowMapper, Object... parameters) {
+    	List<T> p = new ArrayList<>();
+		Integer id = null;
+		int count = 0;
+		Connection connection = null;
+		PreparedStatement statement = null;
+		ResultSet rs = null;
+		try {
+			connection = getConnection();
+			statement = connection.prepareStatement(sql);
+			connection.setAutoCommit(false);
+			rs = statement.executeQuery();
+//			statement.getGeneratedKeys();
+			connection.commit();
+			System.out.println("query thanh cong");
+			count = rowMapper.count(rs);
+			return count;
+			
+		} catch (SQLException e) {
+			if (connection != null) {
+				try {
+					connection.rollback();
+				} catch (SQLException ex) {
+					return 0;
+				}
+				return 0;
+			}
+		} finally {
+			try {
+				if (connection != null) {
+					connection.close();
+				}
+				if (statement != null) {
+					statement.close();
+				}
+				if (rs != null) {
+					rs.close();
+				}
+			} catch (SQLException e) {
+				return 0;
+			}
+		}
+		return count;
 	}
     //insert
     public Integer insert(String sql, Object... parameters){
@@ -116,6 +161,7 @@ public class GenericDaoIpml<T>  implements GenericDAO<T> {
         }
         return null;
     }
+    
     // update
     public Integer update(String sql, Object... parameters){
         Integer id = null;
@@ -186,6 +232,7 @@ public class GenericDaoIpml<T>  implements GenericDAO<T> {
             }
         }
     }
+    
     protected void setParameter(PreparedStatement statement, Object... parameters){
         try {
             for (int i = 0; i< parameters.length; i++){
@@ -194,7 +241,7 @@ public class GenericDaoIpml<T>  implements GenericDAO<T> {
                 if(parameter instanceof Long){
                     statement.setLong(i+1, (Long)parameter);
                 } else if (parameter instanceof String) {
-                    statement.setString(i+1, (String)parameter);
+                    statement.setString(i, (String)parameter);
                 }else if (parameter instanceof Integer) {
                     statement.setInt(i+1, (Integer)parameter);
                 }else if (parameter instanceof Float) {

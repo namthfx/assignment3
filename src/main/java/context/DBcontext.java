@@ -22,6 +22,7 @@ public class DBcontext {
 		}
 		
 		Class.forName(driver);
+		Connection con = DriverManager.getConnection(url, userId, password);
 		return DriverManager.getConnection(url, userId, password);
 	}
 

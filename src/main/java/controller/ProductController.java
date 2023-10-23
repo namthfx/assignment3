@@ -19,10 +19,10 @@ public class ProductController  extends HttpServlet{
 	IProductService productService = new ProductService();
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		final int num = 6;
 		String  page = request.getParameter("page");
-		String num = request.getParameter("num");
 		String orderBy = request.getParameter("orderBy");
-		if(parseArg(page)!= null&&parseArg(num) != null&& orderBy!= null  ) {
+		if(parseArg(page)!= null && orderBy!= null  ) {
 			Pagable pageable;
 			if (orderBy== null)
 				pageable = new Pagable(parseArg(page));
@@ -43,7 +43,7 @@ public class ProductController  extends HttpServlet{
 	}
 	
 	protected void processParamRequest(String character) {
-		productService.getProduct(character);
+		productService.findByName(character);
 	}
 	protected void processParamRequest(Integer id) {
 		productService.findById(id);

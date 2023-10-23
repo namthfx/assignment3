@@ -106,5 +106,9 @@ public class Product {
 	public void setNumber(int number) {
 		this.number = number;
 	}
-
+ @Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return id +" "+ name + " "+ description + " ";
+	}
 }

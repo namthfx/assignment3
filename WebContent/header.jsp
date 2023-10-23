@@ -25,7 +25,7 @@
     <header class="p-3">
         <div class="container flex-column d-flex flex-md-row">
         <div class="header_logo text-center">
-          <a href="#">
+          <a href="${pageContext.request.contextPath}" >
           <h2>
             PRJ321x
           </h2>
@@ -65,10 +65,11 @@
           </ul>
           <div class="header_auth d-flex">
             <p class="header_auth_login">
-              Login
+              
+               <a href="${pageContext.request.contextPath}/login" >Login</a>
             </p>
             <p class="header_auth_register">
-              Register
+              <a href="${pageContext.request.contextPath}/register" >Register</a>
             </p>
 
           </div>
